@@ -20,9 +20,9 @@ using std::min, std::max;
 const double PI = std::acos(-1);
 
 // WORD为无符号16位整数，DWORD为无符号32位整数
-typedef __LONG32 LONG;
+typedef long LONG;
 typedef unsigned short WORD;
-typedef unsigned __LONG32 DWORD;
+typedef unsigned long DWORD;
 typedef unsigned char BYTE;
 
 // 位图文件头: BITMAPFILEHEADER
@@ -1216,7 +1216,7 @@ int main(int argc, char *args[])
     RGBColorMap colMap;
 
     string inStr(args[1]), outStr(args[2]);
-    
+
     bmp.readFile(inStr);
     colMap.readBMP(bmp);
     colMap.bilateralFilter().toBMP().writeFile(outStr);
