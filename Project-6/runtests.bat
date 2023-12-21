@@ -1,4 +1,3 @@
-g++ -std=gnu++20 main.cpp -o main
 main.exe ./tests/TEST-0.bmp ./results/TEST-0-O.bmp
 main.exe ./tests/TEST-1.bmp ./results/TEST-1-O.bmp
 main.exe ./tests/TEST-2.bmp ./results/TEST-2-O.bmp
